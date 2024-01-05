@@ -1,0 +1,45 @@
+/* index.css */
+.title {
+  color: black;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+}
+/* App.css */
+.square-container {
+  display: flex;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Add this if you want the text to be white */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
