@@ -1,8 +1,13 @@
-/* index.css */
+
+.body{
+  font-family: Arial, sans-serif;
+}
+
 .title {
   color: white;
   font-weight: bold;
   font-size: 50px;
+  text-align:centre;
   display: flex;
   justify-content: center;
   background-color: cornflowerblue; /* Choose your preferred background color */
