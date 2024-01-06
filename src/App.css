@@ -1,24 +1,30 @@
 /* index.css */
 .title {
-  color: black;
-  font-size: xx-large;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
   display: flex;
   justify-content: center;
+  background-color: cornflowerblue; /* Choose your preferred background color */
+  padding: 10px; /* Adjust padding as needed */
+  border: 2px solid black; /* Add a border for a distinct look */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  -webkit-text-stroke: 1px black; /* For WebKit browsers like Chrome and Safari */
+  text-stroke: 1px black;
 }
+
 /* App.css */
 .square-container {
   display: flex;
+  flex-direction: column; /* Display the squares vertically */
+  align-items: center;
 }
 
 .square {
   height: 100px;
   width: 100px;
   border: 2px solid black;
-  padding-left: 10px;
-  padding-right: 10px;
   background-color: cornflowerblue;
-  padding-left: 10px;
-  padding-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +32,29 @@
   overflow: hidden;
   word-wrap: break-word;
   white-space: normal;
+}
+
+.inputTop {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: lightblue;
 }
 
 @keyframes logo-spin {

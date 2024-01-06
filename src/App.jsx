@@ -6,7 +6,6 @@ function App() {
   const [arr, setArr] = useState([]);
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     setData(e.target.value);
   };
 
@@ -14,7 +13,7 @@ function App() {
     if (isNaN(dataIn) || dataIn === "") {
       alert("Write a number!");
     } else {
-      setArr([...arr, { id: arr.length + 1, data: parseInt(dataIn, 10) || 0 }]);
+      setArr([{ id: arr.length + 1, data: parseInt(dataIn, 10) || 0 }, ...arr]);
       setData("");
     }
   };
@@ -25,25 +24,33 @@ function App() {
 
   return (
     <div>
-      <h1 className="title">Vishwajeet Implements STACK</h1>
+      <h1 className="title">STACK VIRTUALIZATION</h1>
+      <div>
+        <input
+          className="inputTop"
+          type="text"
+          value={dataIn}
+          onChange={handleChange}
+        />
+        <br />
+        <button className="btn" onClick={handleClick}>
+          PUSH
+        </button>
+        <br />
+        <br />
+        <button className="btn" onClick={handleClick2}>
+          POP
+        </button>
+      </div>
       <div className="square-container">
-        {arr.map((a) => (
+        {arr.map((a, index) => (
           <div key={a.id} className="square">
             {a.data}
             <br />
-            {a.id === arr.length ? "TOP" : ""}
+            {index === 0 ? "TOP" : ""}
           </div>
         ))}
       </div>
-      <br />
-      <br />
-      <input type="text" value={dataIn} onChange={handleChange} />
-      <br />
-      <button onClick={handleClick}>PUSH</button>
-      <br />
-      <br />
-      <br />
-      <button onClick={handleClick2}>POP</button>
     </div>
   );
 }
