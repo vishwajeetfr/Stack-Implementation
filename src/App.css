@@ -14,11 +14,16 @@
   height: 100px;
   width: 100px;
   border: 2px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: cornflowerblue;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Add this if you want the text to be white */
+  color: white;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 @keyframes logo-spin {

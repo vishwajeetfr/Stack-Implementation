@@ -37,7 +37,6 @@ function App() {
       </div>
       <br />
       <br />
-      <br />
       <input type="text" value={dataIn} onChange={handleChange} />
       <br />
       <button onClick={handleClick}>PUSH</button>
