@@ -12,7 +12,7 @@ function App() {
 
   const handleClick = () => {
     if (isNaN(dataIn) || dataIn === "") {
-      alert("Number likh chuitye!!");
+      alert("Write a number!");
     } else {
       setArr([...arr, { id: arr.length + 1, data: parseInt(dataIn, 10) || 0 }]);
       setData("");
