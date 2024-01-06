@@ -19,7 +19,8 @@ function App() {
   };
 
   const handleClick2 = () => {
-    setArr(arr.slice(-(arr.length-1)));
+    const startIndex = arr.length > 1 ? -(arr.length - 1) : arr.length;
+    setArr(arr.slice(startIndex));
   };
 
   return (
