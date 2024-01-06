@@ -19,7 +19,7 @@ function App() {
   };
 
   const handleClick2 = () => {
-    setArr(arr.slice(0, arr.length - 1));
+    setArr(arr.slice(-(arr.length - 1)));
   };
 
   return (
